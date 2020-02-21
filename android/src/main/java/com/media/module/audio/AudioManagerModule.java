@@ -79,8 +79,9 @@ public class AudioManagerModule extends ReactContextBaseJavaModule {
         BluetoothIntentReceiver bluetoothIntentReceiver = new BluetoothIntentReceiver();
         IntentFilter filter2 = new IntentFilter(BluetoothHeadset.ACTION_CONNECTION_STATE_CHANGED);
         reactContext.registerReceiver(bluetoothIntentReceiver, filter2);
-
-        mBluetoothAdapter.getProfileProxy(reactContext, mProfileListener, BluetoothProfile.HEADSET);
+        if (mBluetoothAdapter != null) {
+            mBluetoothAdapter.getProfileProxy(reactContext, mProfileListener, BluetoothProfile.HEADSET);
+        }
     }
 
     // =============================================================================================
