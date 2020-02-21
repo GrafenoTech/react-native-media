@@ -1,0 +1,27 @@
+{
+  "name": "react-native-media",
+  "version": "2.5.6",
+  "description": "Native helpers for media control",
+  "private": true,
+  "main": "index.js",
+  "author": ["FalaFreud Inc.", "Haroldo Teruya"],
+  "scripts": {},
+  "keywords": [
+    "react-native-media",
+    "audio",
+    "directory",
+    "utils",
+    "record",
+    "incoming",
+    "call",
+    "incoming"
+  ],
+  "peerDependencies": {
+    "react-native": "^0.51.2"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/renanpupin/react-native-media"
+  }
+}
